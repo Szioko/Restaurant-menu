@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <title>Restauracja</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="script.js"></script>
+
+
+
+  <script>
+    window.onscroll = function () { myFunction() };
+
+    function myFunction() {
+      if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 80) {
+        document.getElementById("navbar").classList.add("scrolled");
+      } else {
+        document.getElementById("navbar").classList.remove("scrolled");
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Pasek nawigacyjny -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand logo" href="#"><img src="photos/PAULINUM1A.png" alt="logo" /></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end  " id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item ">
+            <a class="nav-link active" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link active" href="#gallery">Galeria</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link active" href="#contact">Kontakt</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              PL/ENG/DE
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="index.html">Polski</a></li>
+              <li><a class="dropdown-item" href="eng.html">English</a></li>
+              <li><a class="dropdown-item" href="de.html">German</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- Pierwsza sekcja -->
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselExample" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselExample" data-bs-slide-to="2"></li>
+      <li data-bs-target="#carouselExample" data-bs-slide-to="3"></li>
+      <!-- Dodaj więcej wskaźników, jeśli masz więcej zdjęć -->
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="photos/background.jpg" alt="background1" class="img-fluid" />
+      </div>
+      <div class="carousel-item">
+        <img src="photos/background_2.jpg" alt="background2" class="img-fluid" />
+      </div>
+      <div class="carousel-item">
+        <img src="photos/background_3.jpg" alt="background3" class="img-fluid" />
+      </div>
+      <div class="carousel-item">
+        <img src="photos/background_4.jpg" alt="background3" class="img-fluid" />
+      </div>
+      <!-- Dodaj więcej elementów .carousel-item, jeśli masz więcej zdjęć -->
+    </div>
+    <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Poprzednie</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Następne</span>
+    </a>
+  </div>
+
+  </nav>
+  </section>
+  <section>
+    <div id="menu" class="py-5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-12">
+            <h1 class="text-uppercase" href="#menu">Menu sezonowe/h1>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="menu-item-title">Carpaccio z kalarepy / rukola / feta / orzechy włoskie / sos cytrynowy</h3>
+            </div>
+            <div class="col-md-6">
+              <h3 class="price text-right">30PLN</h3>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="menu-item-title">Zupa szczawiowa / jajko sadzone </h3>
+            </div>
+            <div class="col-md-6">
+              <h3 class="price text-right">20PLN</h3>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="menu-item-title">Polędwiczka wieprzowa / puree marchewkowe / szparagi / sos pieprzowy</h3>
+            </div>
+            <div class="col-md-6">
+              <h3 class="price text-right">55PLN</h3>
+            </div>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="row">
+            <div class="col-md-6">
+              <h3 class="menu-item-title">Duet truskawkowy</h3>
+            </div>
+            <div class="col-md-6">
+              <h3 class="price text-right">20PLN</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="menu" class="py-5">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1 class="text-uppercase" href="#menu">Menu</h1>
+          <section>
+
+            <div class="container">
+              <div class="row text-center">
+                <div class="col-md-12">
+                  <h2 class="text-uppercase">Przystawki / Vorspeisen / starters</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="menu-item">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3 class="menu-item-title">Pasztet z białej fasoli / sałata / żurawina / gruszka</h3>
+                      </div>
+                      <div class="col-md-6">
+                        <h3 class="price text-right">80g / 20g / 10g / 10g   28PLN</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="description">Weiße Bohnenpastete / Salat / Moosbeere / Birne / White bean pate / lettuce / cranberry / pear</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="menu-item">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3 class="menu-item-title">Carpaccio wołowe / rukola / parmezan</h3>
+                      </div>
+                      <div class="col-md-6">
+                        <h3 class="price text-right"> 100g / 20g / 20g / 10g   38PLN</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="description">Rindfleisch Carpaccio / Rucola / Parmesan / Beef carpaccio / rucola / parmesan</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="menu-item">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3 class="menu-item-title">Wątróbka cielęca / gruszka / grzyby / demi glace</h3>
+                      </div>
+                      <div class="col-md-6">
+                        <h3 class="price text-right">100g / 20g / 20g   41PLN</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="description">Kalbsleber / Birne / Pilze / demi glace / Veal liver/ pear / mushrooms / demi glace</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+
+            <div class="container">
+              <div class="row text-center">
+                <div class="col-md-12">
+                  <h2 class="text-uppercase">Zupy / Suppen / Soups</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="menu-item">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3 class="menu-item-title">Bulion wołowy / kołduny / oliwa pietruszkowa</h3>
+                      </div>
+                      <div class="col-md-6">
+                        <h3 class="price text-right">200ml   21PLN</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="description">Rinderbrühe / Fleischravioli / Petersilienöl / Beef broth / meat ravioli / parsley oli</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="menu-item">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3 class="menu-item-title">Żurek / jajko / pieczywo</h3>
+                      </div>
+                      <div class="col-md-6">
+                        <h3 class="price text-right">200ml / 60g / 50g   22PLN</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="description">Saure Roggensuppe / Ei / Brot / Sour rye roup / egg / bread</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+
+            <div class="container">
+              <div class="row text-center">
+                <div class="col-md-12">
+                  <h2 class="text-uppercase">Sałaty / Salat / Salad</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="menu-item">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3 class="menu-item-title">Pieczony kozi ser / owoce sezonowe / sałata / dressing balsamiczno-malinowy</h3>
+                      </div>
+                      <div class="col-md-6">
+                        <h3 class="price text-right">90g / 5g / 10g   36PLN</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="description">Gebratener Ziegenkäse / saisonales Obst / Salat / Balsamico-Himbeerdressing / Fried goat cheese / seasonal fruit / lettuce / balsamic-raspberry dressing</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="menu-item">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3 class="menu-item-title">Sałatka Cezar / kurczak / sałata / pomidor / grzanki / parmezan</h3>
+                      </div>
+                      <div class="col-md-6">
+                        <h3 class="price text-right">130g / 100g / 20g / 10g   38PLN</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="description">Caesar Salat / Huhn / Salat / Tomate / Croutons / Parmesan / Caesar salad / chicken / lettuce / tomato / croutons / Parmesan</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            <div class="container">
+              <div class="row text-center">
+                <div class="col-md-12">
+                  <h2 class="text-uppercase">Dania główne / Hauptgericht / main courses</h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="menu-item">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3 class="menu-item-title">Policzki wołowe / warzywa grillowane / puree ziemniaczane</h3>
+                      </div>
+                      <div class="col-md-6">
+                        <h3 class="price text-right">150g / 80g / 100g   60PLN</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="description">Rinderbacken / gegrilltes Gemüse / Kartoffelbrei / Beef cheeks / grilled vegetables / mashed potato</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="menu-item">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3 class="menu-item-title">Kacze udko konfitowane / kopytka / modra kapusta</h3>
+                      </div>
+                      <div class="col-md-6">
+                        <h3 class="price text-right">180g / 100g / 100g   56PLN</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="description">Konfiertes Entenbein / Kartoffelklöße / Rothkohle / Confit duck leg / potato dumpling / red cabbage</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="menu-item">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3 class="menu-item-title">Kotlet schabowy / młoda kapusta / ziemniaki opiekane</h3>
+                      </div>
+                      <div class="col-md-6">
+                        <h3 class="price text-right">120g / 150g / 150g   40PLN</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="description">Schweineschnitzel Breaded / jüger Kohl / Ofenkartoffeln / pork chop / early headed cabbage / baked potatoes</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="menu-item">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3 class="menu-item-title">Pierogi 3 smaki / ruskie / mięsne z kapustą / soczewicą i pieczarką / cebula smażona / śmietana </h3>
+                      </div>
+                      <div class="col-md-6">
+                        <h3 class="price text-right">200g / 50g / 10g   36PLN</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="description">Teigtaschen 3 Geschmäckern / Russisch / mit Fleich und Kohl / mit Linsen und Champignon / gebratene Zwiebeln / Sauerrahm / Dumplings 3 flavors / Russian / with meat and cabbage / with lentils and mushroom / fried onion / sour crea</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="menu-item">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3 class="menu-item-title">Curry z Zanzibaru / ryba lub kurczak / ryż / sałatka Kachumbari</h3>
+                      </div>
+                      <div class="col-md-6">
+                        <h3 class="price text-right">50ml / 100g / 150g / 50g   48PLN</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="description">Sansibar-Curry / Fisch oder Huhn / Reis / Kachumbari salat / Zanzibar curry / fish or chicken / rice / Kachumbari salad</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="menu-item">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3 class="menu-item-title">Łosoś / chrusta / tagliatelle / szpinak / pomidor cherry</h3>
+                      </div>
+                      <div class="col-md-6">
+                        <h3 class="price text-right">130g / 20g / 100g / 10g / 10g   65PLN</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="description">Lachs / Crust / Tagliatelle / Spinat / Kirschtomaten / salmon / crust / tagliatelle / spinach / cherry tomato</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="menu-item">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3 class="menu-item-title">Sandacz / bób / bekon / grzyby / ziemniaki opiekane</h3>
+                      </div>
+                      <div class="col-md-6">
+                        <h3 class="price text-right">150g / 20g / 10g / 20g / 100g   54PLN</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="description">Lachs / Crust / Tagliatelle / Spinat / Kirschtomaten / salmon / crust / tagliatelle / spinach / cherry tomato</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="menu-item">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3 class="menu-item-title">Pappardelle / borowiki / śmietana / tymianek / parmezan / zielony groszek</h3>
+                      </div>
+                      <div class="col-md-6">
+                        <h3 class="price text-right">100g / 100g / 20g / 5g / 10g   40PLN</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="description">Pappardelle / Steinpilze / Sahne / Thymian / Parmesan / grüne Erbsen / Pappardelle / mushrooms / cream / thyme / parmesan cheese / green peas</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="menu-item">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3 class="menu-item-title">Spaghetti aglio e olio e peperoncino</h3>
+                      </div>
+                      <div class="col-md-6">
+                        <h3 class="price text-right">250g   28PLN</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="description">Spaghetti aglio e olio (mit Knoblauch, peperoncini und Olivenöl) / Spaghetti Aglio e Olio (with garlic, peperoncini and olive oil)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container">
+                  <div class="row text-center">
+                    <div class="col-md-12">
+                      <h2 class="text-uppercase">Desery / Nachspeisen / Desserts</h2>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="menu-item">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <h3 class="menu-item-title">Lody waniliowe / wiśnie na gorąco / bita śmietana</h3>
+                          </div>
+                          <div class="col-md-6">
+                            <h3 class="price text-right">3 x 50g   23PLN</h3>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <p class="description">Vanilleeis / heiße Kirschen / Schlagsahne / Vanilla ice cream / hot cherries / whipped cream</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="menu-item">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <h3 class="menu-item-title">Sernik królewski / sos truskawkowy</h3>
+                          </div>
+                          <div class="col-md-6">
+                            <h3 class="price text-right">150g / 20g   21PLN</h3>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <p class="description">Königlicher Käsekuchen / Erdbeersauce / Royal cheesecake / strawberry sauce</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="menu-item">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <h3 class="menu-item-title">Zapiekane owoce / lody kawowo-bezowe</h3>
+                          </div>
+                          <div class="col-md-6">
+                            <h3 class="price text-right">180g / 20g   20PLN</h3>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <p class="description">Gebackenes Obst / Kaffee-Baiser-Eis / Crumble/ Baked fruit / coffee-meringue ice cream / crumble</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                
+            <div class="container">
+              <div class="row text-center">
+                <div class="col-md-12">
+                  <h2 class="text-uppercase">Menu dla najmłodszych </h2>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="menu-item">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3 class="menu-item-title">Bulion drobiowy / makaron</h3>
+                      </div>
+                      <div class="col-md-6">
+                        <h3 class="price text-right">200ml / 50g  16PLN</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="description">Hühnersuppe mit Nudeln / Chicken broth with noodles</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="menu-item">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3 class="menu-item-title">Zupa pomidorowa / ryż lub makaron</h3>
+                      </div>
+                      <div class="col-md-6">
+                        <h3 class="price text-right">200ml / 50g   16PLN</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="description">Tomatensuppe / Reis oder Nudeln / Tomato soup / rice or noodles</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="menu-item">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3 class="menu-item-title">Panierowana pierś z kurczaka lub filet rybny / frytki / surówka z marchewki</h3>
+                      </div>
+                      <div class="col-md-6">
+                        <h3 class="price text-right">100g / 100g / 50g   28PLN</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="description">Paniertes Hähnchenbrustfilet oder paniertes Fischfilet / Pommes / Karottensalat / Breaded chicken breast or fish fillet / french fries / carrot salad</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="menu-item">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h3 class="menu-item-title">Pierogi ruskie – 4 szt. / śmietana / cebula smażona </h3>
+                      </div>
+                      <div class="col-md-6">
+                        <h3 class="price text-right">130g / 30g / 10g    22PLN</h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <p class="description">PRussische Teigtaschen / Sahne / Bratzwiebel / Russian dumplings / cream / fried onion</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+    
+          </section>
+
+
+
+<!-- Trzecia sekcja: Galeria i Kontakt -->
+<section id="gallery">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="text-uppercase" href="#gellery">Galeria</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <a href="photos/restauracja_1.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal1">
+          <img src="photos/restauracja_1.jpg" class="img-fluid">
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <a href="photos/danie_glowne_1.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal2">
+          <img src="photos/danie_glowne_1.jpg" class="img-fluid">
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <a href="photos/przystawka_1.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal3">
+          <img src="photos/przystawka_1.jpg" class="img-fluid">
+        </a>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <a href="photos/carpaccio_1.jpg" data-bs-toggle="modal" data-bs-target="#galleryModal4">
+          <img src="photos/carpaccio_1.jpg" class="img-fluid">
+        </a>
+      </div>
+    </div>
+    <hr>
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="galleryModal1" tabindex="-1" aria-labelledby="galleryModalLabel1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="photos/restauracja_1.jpg" class="img-fluid" id="modalImage1">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="galleryModal2" tabindex="-1" aria-labelledby="galleryModalLabel2" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="photos/danie_glowne_1.jpg" class="img-fluid" id="modalImage2">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="galleryModal3" tabindex="-1" aria-labelledby="galleryModalLabel3" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="photos/przystawka_1.jpg" class="img-fluid" id="modalImage3">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="galleryModal4" tabindex="-1" aria-labelledby="galleryModalLabel4" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="photos/carpaccio_1.jpg" class="img-fluid" id="modalImage4">
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="contact">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-12 text-center">
+        <h2 class="text-uppercase"></h2>
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-4 order-md-1 order-2">
+        <h3 class="mb-3">Kontakt</h3>
+        <p>palac@paulinum.pl</p>
+        <p>
+          <a href="tel:+48756494400">tel. +48 75 649 44 00</a>
+        </p>
+        <p>
+          <a href="tel:+48601989857">tel. +48 601 989 857</a>
+        </p>
+      </div>
+      <div class="col-md-4 order-md-2 order-1">
+        <h3 class="mb-3">Adres</h3>
+        <p>ul. Nowowiejska 62</p>
+        <p>58-500 Jelenia Góra</p>
+        <p>GPS: N 50°53' E 15°45'</p>
+      </div>
+      <div class="col-md-4 order-md-3 order-3">
+        <h3 class="mb-3">Godziny otwarcia</h3>
+        <p>Poniedziałek - Sobota: 10:00 - 22:00</p>
+        <p>Sobota - niedziela: 12:00 - 24:00</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skrypty JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+  crossorigin="anonymous"></script>
+</body>
